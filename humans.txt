@@ -1,0 +1,44 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  me: Matthew Donoughe
+  Site: http://mdonoughe.github.com/
+  Twitter: @mdonoughe
+  Location: United States
+
+/* THANKS */
+  HTML5 boilerplate for the original site template so I can be lazy.
+  GitHub for hosting this and my projects.
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, jQuery Lightbox
+  Software:
+  
+
+                                    
+                               -o/-                       
+                               +oo//-                     
+                              :ooo+//:                    
+                             -ooooo///-                   
+                             /oooooo//:                   
+                            :ooooooo+//-                  
+                           -+oooooooo///-                 
+           -://////////////+oooooooooo++////////////::    
+            :+ooooooooooooooooooooooooooooooooooooo+:::-  
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-   
+                     -:+ooooooooooooooooo+:://////:--     
+                       /ooooooooooooooooo+//////:-        
+                      -ooooooooooooooooooo////-           
+                      /ooooooooo+oooooooooo//:            
+                     :ooooooo+/::/+oooooooo+//-           
+                    -oooooo/::///////+oooooo///-          
+                    /ooo+::://////:---:/+oooo//:          
+                   -o+/::///////:-      -:/+o+//-         
+                   :-:///////:-            -:/://         
+                     -////:-                 --//:        
+                       --                       -:        

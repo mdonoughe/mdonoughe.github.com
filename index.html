@@ -1,0 +1,130 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]><html class="no-js ie6" lang=en><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang=en><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang=en><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class=no-js lang=en> <!--<![endif]-->
+<head>
+  <meta charset=utf-8>
+
+  
+  <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+
+  <title>Software</title>
+  <meta name=description content="My personal site with links to stuff.">
+  <meta name="author" content="Matthew Donoughe <mdonoughe@gmail.com>">
+
+  
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+
+  
+  
+
+
+  
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn:regular,bold' rel=stylesheet type='text/css'>
+  <link rel=stylesheet href="css/style-0007.min.css">
+
+  
+
+  
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id=container>
+    <header>
+      <h1>Software</h1>
+      <p>This is a list of software I've written. I'm migrating this over from a server in a basement somewhere and doing some updating and redesigning as of 2011-04-06.</p>
+    </header>
+    <div id=main role=main>
+      <h2>wtth</h2>
+      <div class=buttons><a href="http://github.com/mdonoughe/wtth">GitHub</a> <a href="http://twitter.com/wtthumd">Example</a></div>
+      <p>wtth is a program that connects to <a href="http://humansvszombies.org/">Humans vs. Zombies.org</a>, checks for new zombies, and reports them to Twitter. I run this from a cron when there is a <a href="http://en.wikipedia.org/wiki/Humans_vs._Zombies">Humans vs. Zombies</a> game in progress on campus.</p>
+      <h2>jgit-describe</h2>
+      <div class=buttons><a href="http://github.com/mdonoughe/jgit-describe">GitHub</a></div>
+      <p>jgit-describe is an Ant task that emulates <a href="http://www.kernel.org/pub/software/scm/git/docs/git-describe.html">git-describe</a> using only Java code(doesn't require git or native code). The commit description is saved into a property for whatever use. I've been using it to name jar files.</p>
+      <h2>jff2dot</h2>
+      <div class=buttons><a href="http://github.com/mdonoughe/jff2dot">GitHub</a></div>
+      <p>I had to make a lot of automata in JFlap for class, but the professor wanted everything turned in on paper and JFlap is a terrible program for layout and display. This program converts JFlap finite automata, push down automata, and Turing machines into Graphviz files.</p>
+      <p>Usage: <tt>jff2dot.rb &lt;jflap.jff&gt; &gt; &lt;graphviz.dot&gt;</tt> converts jflap.jff into graphviz.dot.</p>
+      <h2>Java Enemy Territory Launcher</h2>
+      <div class=buttons><a href="http://static.dyndns.org/~mdonoughe/jet/jet.zip">Download</a> <a href="http://static.dyndns.org/~mdonoughe/jet/Joyrex.jnlp">Run</a></div>
+      <div class=screenshots><a href="img/jet0.png"><img alt=screenshot src="img/jet0-thumb.png"/></a><a href="img/jet1.png"><img alt=screenshot src="img/jet1-thumb.png"/></a></div>
+      <p>This program connects to a Return to Castle Wolfenstein: Enemy Territory(<abbr title="Return to Castle Wolfenstein: Enemy Territory">RTCW: ET</abbr>, Enemy Territory, or just <abbr title="Enemy Territory">ET</abbr>) server and shows information about the game currently in session.</p>
+      <p>Features:</p>
+      <ul>
+        <li>Interface looks similar to the interface used in the game.</li>
+        <li>Supports colors in server and player names.</li>
+        <li>Displays a picture of the map.</li>
+        <li>Allows the user to join the game by clicking the “Join Game” button.</li>
+      </ul>
+      <p>Technical details:</p>
+      <ul>
+        <li>The server interaction is handled by a library I wrote called ServerInfo. I only tested it with RTCW: ET, but it should work to some degree with other Quake 3 based games. The library launches a background thread that periodically gets updates from the server.</li>
+        <li>The launcher locates the user's installation of Enemy Territory by checking in the default locations and asking the user. Map images are loaded directly from the map files. The images are sometimes in TGA format, so the launcher includes a custom image loader to supplement Java's built-in image format support.</li>
+        <li>This is a Java Web Start application because the idea was that somebody running an Enemy Territory server could grab a copy and change the server address in the JNLP file and have a working launcher for their server.</li>
+        <li>The source code is under a slightly modified BSD license and is available inside the jar files.</li>
+      </ul>
+
+      <h2>Fill Slots</h2>
+      <div class=buttons><a href="http://www.youtube.com/watch?v=Lga2MxBT_KU">Watch Video</a></div>
+      <p>In highschool I took a robotics class and at the end of the prepared material the teacher assigned some extra credit projects. My project was to keep some block holders populated with blocks. The project couldn't be completed using the standard control software, so I wrote a Java program that uses JNI and some Windows API calls to control the robotics program.</p>
+
+      <h2>User Bar Maker</h2>
+      <div class=buttons><a href="http://static.dyndns.org/~mdonoughe/UserBarMaker/ubm.zip">Download</a> <a href="http://static.dyndns.org/~mdonoughe/UserBarMaker/UserBarMaker.jnlp">Run</a></div>
+      <div class=screenshots><a href="img/ubm0.png"><img alt=screenshot src="img/ubm0-thumb.png"/></a><a href="img/ubm3.png"><img alt=screenshot src="img/ubm3-thumb.png"/></a><a href="img/ubm7.png"><img alt=screenshot src="img/ubm7.png"/></a></div>
+      <p>This program makes those little bars like the ones on <a href="http://www.userbars.org/">Userbars.org</a>.</p>
+      <p>Features:</p>
+      <ul>
+        <li>Fully customizable.</li>
+        <li>Image updates in real time.</li>
+        <li>Runs inside the Java Web Start sandbox.</li>
+        <li>Terrible user interface (not much of a feature).</li>
+        <li>The source code is under a slightly modified BSD license and is available inside the jar file.</li>
+      </ul>
+
+      <h2>NetGrowl.jar</h2>
+      <div class=buttons><a href="http://static.dyndns.org/~mdonoughe/NetGrowl.jar">Download</a></div>
+      <p>This library sends <a href="http://growl.info/">Growl</a>(or <a href="http://www.mumbles-project.org/">Mumbles</a>) notifications by implementing the NetGrowl protocol as seen <a href="http://the.taoofmac.com/space/Projects/netgrowl">here</a>. Unlike the <a href="http://growl.info/documentation/developer/java-support.php">official Java bindings</a>, NetGrowl.jar can be run on Windows and Linux computers.</p>
+      <p>The source code is under a slightly modified BSD license and is available inside the jar file.</p>
+
+      <h2>MIDPWumpus</h2>
+      <div class=buttons><a href="http://static.dyndns.org/~mdonoughe/wumpus/wumpus.zip">Download</a> <a href="http://static.dyndns.org/~mdonoughe/wumpus/Wumpus-0.1.3.tbz2">Download Source</a></div>
+      <p>A Java <a href="http://www.atariarchives.org/bcc1/showpage.php?page=247">Hunt the Wumpus</a> port for cell phones. This works for me on my phone. I had to implement my own keypad input system so it might be funky on phones that don't have the standard cellphone layout.</p>
+      <p>I also made a <a href="http://static.dyndns.org/~mdonoughe/wumpus.rb">Hunt the Wumpus clone in Ruby</a>.</p>
+
+      <h2>猫(Neko)</h2>
+      <div class=buttons><a href="http://static.dyndns.org/~mdonoughe/neko.dmg">Download</a> <a href="http://static.dyndns.org/~mdonoughe/neko.zip">Download Source</a></div>
+      <p>A Mac OS X port of the <a href="http://en.wikipedia.org/wiki/Neko_%28computer_program%29">Neko program</a> written in Objective-C. You can run Oneko on Mac OS X but the cat doesn't appear in front of Mac OS applications, so I ported it to Cocoa. My version does not change the mouse cursor or support different themes. This is based off the public domain Oneko code.</p>
+      <p>This program does not show up in the dock. To close it, you either need to open the terminal and type “<tt>killall Neko</tt>” or open the Activity Monitor and quit Neko.</p>
+
+      <h2>Recorder</h2>
+      <div class=buttons><a href="http://static.dyndns.org/~mdonoughe/Recorder.dmg">Download</a> <a href="http://static.dyndns.org/~mdonoughe/Recorder.zip">Download Source</a></div>
+      <p>Mac OS X doesn't come with a simple recording program, so I made one. This program records AAC audio into a file named “blah timestamp.m4a” where “blah” is the text typed into the destination box. This program listens for all key-presses(even ones made in other applications) and toggles its recording when the user presses the “Help” key on some Apple keyboards. I set this up for recording simultaneously along with another application.</p>
+    </div>
+    
+  </div> 
+
+
+  
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>window.jQuery||document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>");</script>
+
+
+  <script src='js/scripts-0007.min.js'></script>
+
+
+  <!--[if lt IE 7 ]><script src="js/libs/dd_belatedpng.min.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg");</script><![endif]-->
+
+
+  
+  <script>var _gaq=[["_setAccount","UA-22562355-1"],["_trackPageview"]];(function(e,a){var c=e.createElement(a),b=e.getElementsByTagName(a)[0];c.async=1;c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";b.parentNode.insertBefore(c,b)}(document,"script"));</script>
+
+</body>
+</html>
